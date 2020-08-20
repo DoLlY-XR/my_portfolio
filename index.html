@@ -6,6 +6,41 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <script>
+        function submitForm(){
+            var name = document.getElementsByName('entry.2005620554')[0];
+            var email = document.getElementsByName('entry.1045781291')[0];
+            var comment = document.getElementsByName('entry.839337160')[0];
+            var flag = 0;
+            if(name.value.length == 0){
+                flag = 1;
+                document.getElementById('notice-input-name').style.display = "block";
+            }else{
+                document.getElementById('notice-input-name').style.display = "none";
+            }
+            if(email.value.length == 0){
+                flag = 1;
+                document.getElementById('notice-input-email').style.display = "block";
+            }else{
+                document.getElementById('notice-input-email').style.display = "none";
+            }
+            if(comment.value.length == 0){
+                flag = 1;
+                document.getElementById('notice-textarea-comment').style.display = "block";
+            }else{
+                document.getElementById('notice-textarea-comment').style.display = "none";
+            }
+            console.log(flag);
+            if(flag){
+                document.getElementById('hidden_text').style.display = 'none';
+                return false;
+            }
+            else{
+                document.getElementById('hidden_text').style.display = 'block';
+                return true;
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -16,44 +51,102 @@
                 <li class="gnav__menu__item"><a href="#profile">プロフィール</a></li>
                 <li class="gnav__menu__item"><a href="#Works">製作物</a></li>
                 <li class="gnav__menu__item"><a href="#Skills">スキル</a></li>
+                <li class="gnav__menu__item"><a href="#Contact">連絡先</a></li>
             </ul>
         </nav>
     </header>
     <div class="contents">
         <span id="top" class="link"></span>
-        <div class="content_backcolor">
+        <div class="content_nobackcolor">
             <h1>Top</h1>
             <div class="content_top">
-                <p>このページは中村義哉のポートフォリオサイトです。
-                    <br>私のことをよく知っていただくために、「プロフィール」「製作物」「スキル」を掲載しました。
-                    <br>どうぞご覧ください。
-                </p>
+                <div class="content_text">
+                    <p>このページは中村義哉のポートフォリオサイトです。
+                        <br>私のことをよく知っていただくために、
+                    </p>
+                        <ul class="top_menu">
+                            <li class="top_menu_item"><a href="#profile">プロフィール</a></li>
+                            <li class="top_menu_item"><a href="#Works">製作物</a></li>
+                            <li class="top_menu_item"><a href="#Skills">スキル</a></li>
+                        </ul>
+                    <p>を掲載しました。どうぞご覧ください。
+                    </p>
+                </div>
             </div>
         </div>
         <span id="profile" class="link"></span>
-        <div class="content_nobackcolor">
+        <div class="content_backcolor">
             <h1>Profile</h1>
             <div class="content_profile">
-                <div class="intro"><img src="images/intro.png" alt="intro"></div>
+                <div class="profile_img"><img src="images/intro.png" alt="intro"></div>
                 <div class="content_text">
-                    <p>東京都八王子市在住の修士１年生。
+                    <h2>【 名前 】</h2>
+                    <p>中村 義哉</p>
+                    <h2>【 学歴 】</h2>
+                    <p>理工学研究科 情報システム工学専攻 修士１年</p>
+                    <h2>【 趣味 】</h2>
+                    <p>バスケ、ドラム演奏</p>
+                    <h2>【 詳細 】</h2>
+                    <p>東京都八王子市在住。
                         高校時代にアニメ「ソードアートオンライン」を鑑賞し、VRの魅力に取り憑かれる。
-                        大学では理工学部情報システム工学科で学び、画像処理、VR/ARの研究室に所属する。
-                        大学の卒業研究でVRの触覚技術に触れ、大学院進学後の現在も同研究に没頭中。趣味はバスケ、ドラム演奏。
+                        大学では画像処理、VR/ARの研究室に所属する。
+                        大学の卒業研究でVRの触覚技術に触れ、大学院進学後の現在も同研究に没頭中。
                     </p>
                 </div>
             </div>
         </div>
         <span id="Works" class="link"></span>
-        <div class="content_backcolor">
+        <div class="content_nobackcolor">
             <h1>Works</h1>
             <div class="content_works">
+                <div class="work1"><a href="pages/work1.html"><img src="" alt="work1"></a></div>
             </div>
         </div>
         <span id="Skills" class="link"></span>
-        <div class="content_nobackcolor">
+        <div class="content_backcolor">
             <h1>Skills</h1>
             <div class="content_skills">
+            </div>
+        </div>
+        <span id="Contact" class="link"></span>
+        <div class="content_nobackcolor">
+            <h1>Contact</h1>
+            <div class="content_contact">
+                <div class="content_text">
+                    <p>
+                        ご覧いただきありがとうございました。
+                        このサイトを通して、私のことを少しでも知っていただけたら嬉しいです。
+                        もし何かコメントがありましたら、下記フォームをご利用ください。
+                    </p>
+                </div>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFIAOAlzYG2ZZNdwzDdi1ss4Y-QUXKTlVuNUf7Nb2gbobgGw/formResponse" method="post" name="contact" target="dummyIframe" onsubmit="return submitForm()">
+                    <div class="input_field">
+                        <div class="name">
+                            <p>名前</p>
+                            <input type="text" name="entry.2005620554"  placeholder="Your Name">
+                            <p class="hidden_caution" id="notice-input-name">*名前を入力して下さい</p>
+                        </div>
+                        <div class="e-mail">
+                            <p>メールアドレス</p>
+                            <input type="email" name="entry.1045781291"  placeholder="Your Email">
+                            <p class="hidden_caution" id="notice-input-email">*メールアドレスを入力して下さい</p>
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <div class="comment">
+                            <p>コメント</p>
+                            <textarea name="entry.839337160" rows="5" cols="30" placeholder="Comment"></textarea>
+                            <p class="hidden_caution" id="notice-textarea-comment">*コメントを入力して下さい</p>
+                        </div>
+                    </div>
+                    <input class="button" type="submit" value="Send">
+                </form>
+                <iframe name="dummyIframe" style="display:none;"></iframe>
+                <div id="hidden_text" style="display:none;">
+                    <p>お問い合わせありがとうございました。
+                        <br>後ほどメールにて連絡いたします。
+                    </p>
+                </div>
             </div>
         </div>
     </div>
