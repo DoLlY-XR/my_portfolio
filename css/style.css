@@ -265,8 +265,8 @@ body{
   margin: auto;
 }
 .skill_logo > img{
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .skill_level{
   width: 50%;
@@ -274,8 +274,8 @@ body{
   margin: auto;
 }
 .skill_level > img{
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .content_contact{
   text-align: center;
