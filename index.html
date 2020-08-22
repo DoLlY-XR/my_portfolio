@@ -58,94 +58,204 @@
     <div class="contents">
         <span id="top" class="link"></span>
         <div class="content_nobackcolor">
-            <h1>Top</h1>
-            <div class="content_top">
-                <div class="content_text">
-                    <p>このページは中村義哉のポートフォリオサイトです。
-                        <br>私のことをよく知っていただくために、
-                    </p>
-                        <ul class="top_menu">
-                            <li class="top_menu_item"><a href="#profile">プロフィール</a></li>
-                            <li class="top_menu_item"><a href="#Works">製作物</a></li>
-                            <li class="top_menu_item"><a href="#Skills">スキル</a></li>
-                        </ul>
-                    <p>を掲載しました。どうぞご覧ください。
-                    </p>
+            <div class="content_item">
+                <h1>Top</h1>
+                <div class="content_top">
+                    <div class="content_text">
+                        <p>このページは中村義哉のポートフォリオサイトです。
+                            <br>私のことをよく知っていただくために、
+                        </p>
+                            <ul class="top_menu">
+                                <li class="top_menu_item"><a href="#profile">プロフィール</a></li>
+                                <li class="top_menu_item"><a href="#Works">製作物</a></li>
+                                <li class="top_menu_item"><a href="#Skills">スキル</a></li>
+                            </ul>
+                        <p>を掲載しました。どうぞご覧ください。
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <span id="profile" class="link"></span>
         <div class="content_backcolor">
-            <h1>Profile</h1>
-            <div class="content_profile">
-                <div class="profile_img"><img src="images/intro.png" alt="intro"></div>
-                <div class="content_text">
-                    <h2>【 名前 】</h2>
-                    <p>中村 義哉</p>
-                    <h2>【 学歴 】</h2>
-                    <p>理工学研究科 情報システム工学専攻 修士１年</p>
-                    <h2>【 趣味 】</h2>
-                    <p>バスケ、ドラム演奏</p>
-                    <h2>【 詳細 】</h2>
-                    <p>東京都八王子市在住。
-                        高校時代にアニメ「ソードアートオンライン」を鑑賞し、VRの魅力に取り憑かれる。
-                        大学では画像処理、VR/ARの研究室に所属する。
-                        大学の卒業研究でVRの触覚技術に触れ、大学院進学後の現在も同研究に没頭中。
-                    </p>
+            <div class="content_item">
+                <h1>Profile</h1>
+                <div class="content_profile">
+                    <div class="profile_img"><img src="images/basketball.png" alt="basketball"><img src="images/drum.png" alt="drum"></div>
+                    <div class="content_text">
+                        <h2>【 名前 】</h2>
+                        <p>中村 義哉</p>
+                        <h2>【 学歴 】</h2>
+                        <p>理工学研究科 情報システム工学専攻 修士１年</p>
+                        <h2>【 趣味 】</h2>
+                        <p>バスケ、ドラム演奏</p>
+                        <h2>【 詳細 】</h2>
+                        <p>東京都八王子市在住。
+                            高校時代にアニメ「ソードアートオンライン」を鑑賞し、VRの魅力に取り憑かれる。
+                            大学では画像処理、VR/ARの研究室に所属する。
+                            大学の卒業研究でVRの触覚技術に触れ、大学院進学後の現在も同研究に没頭中。
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <span id="Works" class="link"></span>
         <div class="content_nobackcolor">
-            <h1>Works</h1>
-            <div class="content_works">
-                <div class="work1"><a href="pages/work1.html"><img src="" alt="work1"></a></div>
+            <div class="content_item">
+                <h1>Works</h1>
+                <div class="content_works">
+                    <div class="content_text">
+                        <p>趣味や研究のために試作した成果物をご紹介します。</p>
+                    </div>
+                    <div class="works">
+                        <div class="work_item">
+                            <a href="pages/work1.html"><img src="" alt="work1"></a>
+                            <p>Work1</p>
+                        </div>
+                        <div class="work_item">
+                            <a href="pages/work2.html"><img src="" alt="work2"></a>
+                            <p>Work2</p>
+                        </div>
+                        <div class="work_item">
+                            <a href="pages/work3.html"><img src="" alt="work3"></a>
+                            <p>Work3</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <span id="Skills" class="link"></span>
         <div class="content_backcolor">
-            <h1>Skills</h1>
-            <div class="content_skills">
+            <div class="content_item">
+                <h1>Skills</h1>
+                <div class="content_skills">
+                    <div class="content_text">
+                        <p>これまでに習得したプログラミング言語を５段階のレベル表示でまとめました。
+                            <br>レベルの見方としては、
+                        </p>
+                        <div class="skill_reference">
+                            <ol>
+                                <li>書いたことがある</li>
+                                <li>リファレンス等を見ながらコードを書ける</li>
+                                <li>ライブラリ、フレームワークを自作できる</li>
+                                <li>リファレンス等を見なくてもコードを書ける</li>
+                                <li>何でもできる</li>
+                            </ol>
+                        </div>
+                        <p>となっています。
+                            <br>主に使用しているのは、院の研究に使用している「C#」「Arduino」で、ゲームエンジン「Unity」のオブジェクト制御と、ハードウェア「Arduinoボード」とのシリアル通信に用いています。
+
+                        </p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/c-logo.svg" alt="C">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-2.png" alt="level2">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/c-plusplus-logo.svg" alt="C++">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-1.png" alt="level1">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/c-sharp-logo.svg" alt="C#">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-3.png" alt="level3">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/python-logo.svg" alt="Python">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-1.png" alt="level1">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/html-5-logo.svg" alt="HTML5">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-2.png" alt="level2">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/css-3-logo.svg" alt="CSS3">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-2.png" alt="level2">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/javascript-logo.svg" alt="Javascript">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-1.png" alt="level1">
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <div class="skill_logo">
+                                <img src="images/arduino-logo.svg" alt="Arduino">
+                            </div>
+                            <div class="skill_level">
+                                <img src="images/skill-level-3.png" alt="level3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <span id="Contact" class="link"></span>
         <div class="content_nobackcolor">
-            <h1>Contact</h1>
-            <div class="content_contact">
-                <div class="content_text">
-                    <p>
-                        ご覧いただきありがとうございました。
-                        このサイトを通して、私のことを少しでも知っていただけたら嬉しいです。
-                        もし何かコメントがありましたら、下記フォームをご利用ください。
-                    </p>
-                </div>
-                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFIAOAlzYG2ZZNdwzDdi1ss4Y-QUXKTlVuNUf7Nb2gbobgGw/formResponse" method="post" name="contact" target="dummyIframe" onsubmit="return submitForm()">
-                    <div class="input_field">
-                        <div class="name">
-                            <p>名前</p>
-                            <input type="text" name="entry.2005620554"  placeholder="Your Name">
-                            <p class="hidden_caution" id="notice-input-name">*名前を入力して下さい</p>
-                        </div>
-                        <div class="e-mail">
-                            <p>メールアドレス</p>
-                            <input type="email" name="entry.1045781291"  placeholder="Your Email">
-                            <p class="hidden_caution" id="notice-input-email">*メールアドレスを入力して下さい</p>
-                        </div>
+            <div class="content_item">
+                <h1>Contact</h1>
+                <div class="content_contact">
+                    <div class="content_text">
+                        <p>
+                            ご覧いただきありがとうございました。
+                            このサイトを通して、私のことを少しでも知っていただけたら嬉しいです。
+                            もし何かコメントがありましたら、下記フォームをご利用ください。
+                        </p>
                     </div>
-                    <div class="input_field">
-                        <div class="comment">
-                            <p>コメント</p>
-                            <textarea name="entry.839337160" rows="5" cols="30" placeholder="Comment"></textarea>
-                            <p class="hidden_caution" id="notice-textarea-comment">*コメントを入力して下さい</p>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFIAOAlzYG2ZZNdwzDdi1ss4Y-QUXKTlVuNUf7Nb2gbobgGw/formResponse" method="post" name="contact" target="dummyIframe" onsubmit="return submitForm()">
+                        <div class="input_field">
+                            <div class="name">
+                                <p>名前</p>
+                                <input type="text" name="entry.2005620554"  placeholder="Your Name">
+                                <p class="hidden_caution" id="notice-input-name">*名前を入力して下さい</p>
+                            </div>
+                            <div class="e-mail">
+                                <p>メールアドレス</p>
+                                <input type="email" name="entry.1045781291"  placeholder="Your Email">
+                                <p class="hidden_caution" id="notice-input-email">*メールアドレスを入力して下さい</p>
+                            </div>
                         </div>
+                        <div class="input_field">
+                            <div class="comment">
+                                <p>コメント</p>
+                                <textarea name="entry.839337160" rows="5" cols="30" placeholder="Comment"></textarea>
+                                <p class="hidden_caution" id="notice-textarea-comment">*コメントを入力して下さい</p>
+                            </div>
+                        </div>
+                        <input class="button" type="submit" value="Send">
+                    </form>
+                    <iframe name="dummyIframe" style="display:none;"></iframe>
+                    <div id="hidden_text" style="display:none;">
+                        <p>お問い合わせありがとうございました。
+                            <br>後ほどメールにて連絡いたします。
+                        </p>
                     </div>
-                    <input class="button" type="submit" value="Send">
-                </form>
-                <iframe name="dummyIframe" style="display:none;"></iframe>
-                <div id="hidden_text" style="display:none;">
-                    <p>お問い合わせありがとうございました。
-                        <br>後ほどメールにて連絡いたします。
-                    </p>
                 </div>
             </div>
         </div>
