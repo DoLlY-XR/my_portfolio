@@ -11,6 +11,15 @@ body{
   .link{
     top: -250px;
   }
+  .content_item{
+    width: 100%;
+  }
+  .input_field > .name{
+    width: 100%;
+  }
+  .input_field > .e-mail{
+    width: 100%;
+  }
 }
 @media screen and (min-width:554px){
   .contents{
@@ -21,9 +30,6 @@ body{
   }
 }
 @media screen and (min-width:555px){
-  .site-header{
-    padding: 0 20px;
-  }
   .contents{
     padding-top: 170px;
   }
@@ -37,6 +43,29 @@ body{
   }
   .link{
     top: -155px;
+  }
+  .content_item{
+    width: 600px;
+    margin: 0 auto;
+  }
+  .content_profile{
+    display: flex;
+  }
+  .works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .input_field{
+    display: flex;
+  }
+  .input_field > .name{
+    width: 50%;
+    margin-right: 10px;
+  }
+  .input_field > .e-mail{
+    width: 50%;
+    margin-left: 10px;
   }
 }
 @media screen and (min-width:811px){
@@ -57,7 +86,6 @@ body{
   padding: 10px 20px;
 }
 .contents{
-  margin: 0 auto;
   width: 100%;
 }
 .link{
@@ -103,17 +131,12 @@ body{
 }
 .content_text{
   line-height: 1.8;
-  text-align: left;
+  text-align: center;
   margin:  0 auto;
 }
 .content_top{
-  display: block;
-  width: 600px;
   justify-content: center;
   margin: 0 auto;
-}
-.content_top > .content_text{
-  text-align: center;
 }
 .top_menu{
   line-height: 2;
@@ -126,6 +149,7 @@ body{
   border-radius: 8px;
   padding: 10px 40px;
   margin: auto;
+  margin-bottom: 16px;
 }
 .top_menu_item{
   list-style-type : none;
@@ -143,8 +167,6 @@ body{
   border-bottom: 0px;
 }
 .content_profile{
-  display: flex;
-  width: 600px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -161,7 +183,7 @@ body{
 }
 .content_profile > .content_text{
   width: 60%;
-  margin-left: 0;
+  text-align: left;
 }
 .content_text > h2{
   font-size: 17px;
@@ -172,30 +194,103 @@ body{
   margin-top: 0;
 }
 .content_works{
-  display: flex;
-  width: 50%;
-  justify-content: center;
   margin: 0 auto;
+}
+.works::before{
+  content: "";
+  width: 180px;
+  order: 1;
+}
+.works::after{
+  content: "";
+  width: 180px;
+}
+.work_item{
+  width: 180px;
+}
+.work_item > a > img{
+  width: 100%;
+  height: auto;
+  border: 2px solid;
+}
+.work_item > p{
+  text-align: center;
+  margin-top: 0px;
 }
 .content_skills{
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  margin: 0 auto;
-}
-.content_contact{
-  width: 50%;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+.content_skills > .content_text{
+  text-align: left;
+}
+.skill_reference{
+  border: 1px dashed;
+  margin-bottom: 16px;
+}
+.skill_reference > ol{
+  font-size: 14px;
+  text-align: left;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.skills::before{
+  content: "";
+  width: 170px;
+  padding: 10px;
+  order: 1;
+}
+.skills::after{
+  content: "";
+  width: 170px;
+  padding: 10px;
+}
+.skill_item{
+  width: 170px;
+  display: flex;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.skill_logo{
+  width: 30%;
+  display: flex;
+  margin: auto;
+}
+.skill_logo > img{
+  width: 100%;
+  height: auto;
+}
+.skill_level{
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+.skill_level > img{
+  width: 100%;
+  height: auto;
+}
+.content_contact{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.content_contact > .content_text{
+  text-align: left;
 }
 form{
   display: block;
   margin: 0 auto;
 }
 .input_field{
-  display: flex;
   width: 100%;
   text-align: left;
 }
@@ -203,14 +298,6 @@ form{
   border-bottom: 1px solid;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-.input_field > .name{
-  width: 50%;
-  margin-right: 10px;
-}
-.input_field > .e-mail{
-  width: 50%;
-  margin-left: 10px;
 }
 .input_field > .comment{
   width: 100%;
