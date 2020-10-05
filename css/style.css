@@ -2,7 +2,7 @@ body{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/Top/background.jpg");
 }
 @media screen and (min-width:0px){
   .contents{
@@ -142,7 +142,7 @@ body{
   line-height: 2;
   width: 100px;
   text-align: left;
-  background: url(../images/cork-board.png);
+  background: url(../images/Top/cork-board.png);
   background-color:rgba(255,255,255,0.7);
   background-blend-mode:lighten;
   border: 2px solid;
@@ -196,6 +196,9 @@ body{
 .content_works{
   margin: 0 auto;
 }
+.content_works h2{
+  text-align: center;
+}
 .works::before{
   content: "";
   width: 180px;
@@ -217,6 +220,20 @@ body{
   text-align: center;
   margin-top: 0px;
 }
+.img_or_mov{
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.img_or_mov img{
+  width: 100%;
+}
+.img_or_mov video{
+  width: 100%;
+}
+.content_item > .content_text{
+  text-align: left;
+}
 .content_skills{
   text-align: center;
   justify-content: center;
@@ -228,7 +245,9 @@ body{
 }
 .skill_reference{
   border: 1px dashed;
+  margin: auto;
   margin-bottom: 16px;
+  width: 340px;
 }
 .skill_reference > ol{
   font-size: 14px;
