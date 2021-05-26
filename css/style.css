@@ -224,6 +224,12 @@ body{
   width: 500px;
   text-align: center;
   margin: 0 auto;
+  padding: 5px 0;
+}
+.mov_line{
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+  border-bottom: double 3px #333;
 }
 .img_or_mov img{
   width: 100%;
