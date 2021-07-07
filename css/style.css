@@ -84,6 +84,7 @@ body{
   width: calc(100% - 56px);
   box-shadow: 2px -2px 4px -2px gray inset;
   padding: 10px 20px;
+  z-index: 1;
 }
 .contents{
   width: 100%;
@@ -294,14 +295,59 @@ body{
   width: 100%;
 }
 .skill_level{
+  position: relative;
   width: 50%;
-  display: flex;
   margin: auto;
 }
 .skill_level > img{
   height: auto;
   width: 100%;
 }
+
+.skill_level > .level4{
+  border: 2px solid #333;
+  border-radius: 30%;
+  width: 90%;
+  height: 5px;
+  margin: 5px auto 5px;
+}
+
+.skill_level > .level3{
+  border: 2px solid #333;
+  border-radius: 30%;
+  width: 65%;
+  height: 5px;
+  margin: 5px auto 5px;
+}
+
+.skill_level > .level2{
+  border: 2px solid #333;
+  border-radius: 30%;
+  width: 40%;
+  height: 5px;
+  margin: 5px auto 5px;
+}
+
+.skill_level > .level1{
+  border: 2px solid #333;
+  border-radius: 30%;
+  width: 15%;
+  height: 5px;
+  margin: 5px auto 5px;
+}
+
+.skill_level > .ok{
+  background: rgba(255,204,255,1);
+}
+
+.skill_level > p{
+  position: absolute;
+  top: 35px;
+  left: 65px;
+  font-size: 10px;
+  width: 30px;
+}
+
 .content_contact{
   text-align: center;
   justify-content: center;
